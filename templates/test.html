@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>网络状态</title>
+    <style type="text/css">
+    </style>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function () {
+            window.addEventListener("offline", function (e) {
+                console.log("offline");
+                $("div").append("网络离线\t");
+            });
+ 
+            window.addEventListener("online", function (e) {
+                console.log("online");
+                $("div").append("网络正常\t");
+            });
+        });
+    </script>
+</head>
+<body>
+<p>自动监测网络状态</p>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				height: 100%;
+				width: 100%;
+			}
+			*{
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+			#cortainer{
+				position: absolute;
+				width: 600px;
+				height: 450px; 
+				top: 50%;
+				margin-top: -225px;
+				left: 50%;
+				transform: translateX(-50%);
+				background:rgba(0,0,0,0.2);
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: 1s;
+			}
+			.title{
+				height: 120px;
+				color: white;
+				font-size: 50px;
+				font-weight: bolder;
+				margin-bottom: 30px;
+				font-family:"仿宋" ;
+				transition: 1s;
+				margin-left: 100px;
+				line-height: 165px;
+			}
+			.info{
+				height: 32px;
+				width: 180px;
+				line-height: 31px;
+				background-color: black;
+				color: grey;
+				border-radius: 20px;
+				font-weight: 550;
+				transition: 1s;
+			}
+			.event{
+				height: 30px;
+				line-height: 30px;
+				width: 150px;
+				background-color: black;
+				color: grey;
+				border-radius: 20px;
+				font-weight: 600;
+				margin: 10px 0;
+				transition: 1s;
+			}
+			.date{
+				height: 30px;
+				line-height: 30px;
+				width: 80px;
+				background-color: black;
+				color: lightslategrey;
+				border-radius: 20px;
+				font-weight: 500;
+				margin-bottom: 60px;
+				transition: 1s;
+			}
+			.weChat{
+				width: 19%;
+				height: 25%;
+			}
+			.logo{
+				position: absolute;
+				/* width: 22%; */
+				height: 70px;
+				left: 200px;
+				top: 35px;
+				border-radius: 50%;
+				background-color: #000000;
+				padding: 10px;
+				transition: 1s;
+			}
+			#cortainer:hover .logo{
+				background-color: white;
+			}
+			#cortainer:hover{
+				background-color: white;
+			}
+			#cortainer:hover .info{
+				background-color: white;
+				color:black;
+			}
+			#cortainer:hover .event{
+				background-color: white;
+				color:black;
+			}
+			#cortainer:hover .date{
+				background-color: white;
+				color:black;
+			}
+			#cortainer:hover .title{
+				color: black;
+			}
+			.cover{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.cover{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background: url(../img/backGround1.JPG) no-repeat;
+				background-size: 100% 100%;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="cover"></div>
+		<div id="cortainer">
+			<div class="title">海创号</div>
+			<div class="info">海归青年，创链世界</div>
+			<div class="event">Next event date</div>
+			<div class="date">xx.xx.xx</div>
+			<img class="weChat"src="../img/weChatID.jpg" >
+			<img class="logo" src="../img/png0opa.png" >
+		</div>
+	</body>
+</html>
